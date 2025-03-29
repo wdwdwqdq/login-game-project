@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-section">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <div id="error-msg" style="color: red; display: none;">Invalid credentials!</div>
+  </div>
+
+
+  <div id="games-section" style="display: none;">
+    <!-- New Heading and Dark/Light Mode buttons -->
+    <div class="header">
+      <h2>Unblocked Fun Games to Play</h2>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+      <button onclick="toggleLightMode()">Light Mode</button>
+    </div>
+
+
+    <div class="games-container">
+      <div class="game-card">
+        <h3>Google Snake</h3>
+        <p>Play the classic Snake game on Google!</p>
+        <a href="https://www.google.com/search?q=google+snake&rlz=1CAKSWW_enAU1106&oq=google+snake&gs_lcrp=EgZjaHJvbWUqDwgAEEUYOxiDARixAxiABDIPCAAQRRg7GIMBGLEDGIAEMgYIARBFGDsyBwgCEAAYgAQyDQgDEAAYgwEYsQMYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBggHEEUYPNIBCDE3MzNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on" target="_blank">Play Now</a>
+      </div>
+      <div class="game-card">
+        <h3>Google Cricket</h3>
+        <p>Try to hit the ball and score big in this fun cricket game.</p>
+        <a href="https://www.google.com/search?q=google+cricket" target="_blank">Play Now</a>
+      </div>
+      <div class="game-card">
+        <h3>2048</h3>
+        <p>Combine tiles to reach the elusive 2048 tile in this number puzzle game.</p>
+        <a href="https://play2048.co/" target="_blank">Play Now</a>
+      </div>
+      <div class="game-card">
+        <h3>Google Pacman</h3>
+        <p>Help Pac-Man avoid ghosts and eat all the dots in this classic arcade game!</p>
+        <a href="https://www.google.com/search?q=google+pacman" target="_blank">Play Now</a>
+      </div>
+      <div class="game-card">
+        <h3>Wordle</h3>
+        <p>Guess the five-letter word in as few attempts as possible.</p>
+        <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Play Now</a>
+      </div>
+      <div class="game-card">
+        <h3>2 Play Tag</h3>
+        <p>Play a fun tag game with friends or strangers in this online multiplayer game.</p>
+        <a href="https://roblox-unblock.github.io/play/tag.html#" target="_blank">Play Now</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="admin-section" style="display: none;">
+    <h3>Admin Section</h3>
+    <div id="user-data"></div>
+    <button onclick="logoutAdmin()">Logout</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
