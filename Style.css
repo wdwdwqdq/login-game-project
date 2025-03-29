@@ -1,0 +1,115 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+#login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+#games-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+
+button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+input {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+
+.game-card {
+  width: 250px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.game-card:hover {
+  transform: translateY(-10px);
+}
+
+
+.game-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+
+.game-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.game-card a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+#admin-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
